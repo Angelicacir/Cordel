@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Fredericka+the+Great & family= Inter:wght@100;200;300;400;500; 600 & family= Lato:wght@400;700 & family= Open+Sans:wght@300 & family= Passion+One & family= Press+Start+2P & família = Sriracha &family= Ubuntu:ital,wght@0,300;0,400;0,500; 0,700;1,300;1,400;1,500 & display=trocar');
+
+:root{
+    --font01: verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Sriracha', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100hv;
+    font-family: var(--font01);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps; /* font-variancia para letras maiusculas*/
+    font-family: var(--font01);
+    font-size: 5vw;
+}
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+    /*underline, sublinhado*/
+}
+
+section{ /*configurações para o efeito parallax*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2rem; /*espaçamento entre as linhas*/
+    padding-left: 30px; /*espaçamento no inicio do texto*/
+    font-family: var(--font02);
+    font-weight: bold;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.fundo-normal{
+    background-color: white;
+    color: black;
+}
+section.fundo-img{
+    background-color: rgb(107, 105, 105);
+    color: white;
+    box-shadow: inset /*insert= para dentro*/ 2px 3px 13px 0px black;
+    background-attachment: fixed; /*efeito parallax*/
+}
+section.fundo-img > p{
+    /*confi. do paragrafo quando tiver fundo branco na img*/
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(49, 48, 48, 0.411);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.546);
+}
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
